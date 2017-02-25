@@ -1,6 +1,5 @@
 package springmvc_hibernate_test.service_test;
 
-import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.alibaba.fastjson.JSON;
 import com.feelingware.test.springmvc_hibernate_test.entity.User;
 import com.feelingware.test.springmvc_hibernate_test.service.UserService;
 
@@ -42,7 +40,7 @@ public class UserServiceTest {
 		LOGGER.info(JSON.toJSONString(id));*/
 		List<User> findAllUser = userService.findAll();
 		for (User user : findAllUser) {
-			System.out.println(user.getNickName());
+			LOGGER.info(user.getNickName());
 		}
 	}
 }

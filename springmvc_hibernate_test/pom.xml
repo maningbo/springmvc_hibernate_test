@@ -16,6 +16,7 @@
 	</properties>
 
 	<dependencies>
+
 		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -150,41 +151,55 @@
 		</dependency>
 
 		<!-- servlet -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>3.0-alpha-1</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
 	</dependencies>
 	
 	<build>
 		<finalName>springmvc_hibernate_test</finalName>
 		
 		<plugins>
-			<!-- Run the JUnit unit tests in an isolated classloader -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.4.2</version>
 				<configuration>
-					<skipTests>true</skipTests>
+					<skipTests>true</skipTests><!-- maven install 时回跳过 junit 测试 -->
 				</configuration>
 			</plugin>
-		
+			
+			<!-- maven编译器版本开始 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
 					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
 				</configuration>
+			</plugin>
+			<!-- maven编译器版本结束 -->
+			
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.1.1.v20140108</version>
 			</plugin>
 		</plugins>
 	</build>
