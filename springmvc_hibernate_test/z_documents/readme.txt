@@ -10,3 +10,8 @@ http://blog.csdn.net/testcs_dn/article/details/36455669#comments
 
 4.搭建springmvc_hibernate项目
 https://my.oschina.net/airship/blog/804243
+
+5.jquery下载地址
+http://jquery.com/download/
+https://code.jquery.com/jquery-3.1.1.min.js
+https://code.jquery.com/jquery-3.1.1.js
