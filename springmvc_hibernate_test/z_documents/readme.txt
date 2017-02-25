@@ -36,4 +36,4 @@ http://www.cnblogs.com/wuwz/p/5582178.html
 http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html
 
 11，利用maven install项目，生成可用tomcat启动的项目
-
+http://note.youdao.com/noteshare?id=9a4ec9009af8b57680466272c4fcbb6a&sub=C94B704642704F82AE9A42676CD17343
