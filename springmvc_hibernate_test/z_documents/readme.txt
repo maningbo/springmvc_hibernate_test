@@ -11,7 +11,10 @@ http://blog.csdn.net/testcs_dn/article/details/36455669#comments
 4.搭建springmvc_hibernate项目
 https://my.oschina.net/airship/blog/804243
 
-5.jquery下载地址
+5.eclipse中共享为git项目时遇到无法删除多余文件的问题
+http://note.youdao.com/noteshare?id=139730a832a7db4dcf385e580f4397a5&sub=21C22DF3BA8648759D1CEA6481B5AD94
+
+6.jquery下载地址
 http://jquery.com/download/
 https://code.jquery.com/jquery-3.1.1.min.js
 https://code.jquery.com/jquery-3.1.1.js
